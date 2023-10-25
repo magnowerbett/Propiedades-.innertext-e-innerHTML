@@ -1,13 +1,13 @@
 
-let titulo = document.getElementById('titulo')
-let link = document.querySelector('a');
+const titulo = document.getElementById('titulo')
+const link = document.querySelector('a');
 
 
 titulo.innerText = 'JavaScript - 1'
 link.innerText = 'Proz - Talento Cloud'
 
-let listaNaoOrdenada = document.querySelector('ul')
-let listaOrdenada = document.querySelector('ol')
+const listaNaoOrdenada = document.querySelector('ul')
+const listaOrdenada = document.querySelector('ol')
 
 listaNaoOrdenada.innerHTML = `
   <li>HTML</li>
