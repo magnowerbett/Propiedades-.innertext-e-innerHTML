@@ -9,7 +9,7 @@ link.innerText = 'Proz - Talento Cloud'
 const listaNaoOrdenada = document.querySelector('ul')
 const listaOrdenada = document.querySelector('ol')
 
-listaNaoOrdenada.innerHTML = `
+listaNaoOrdenada.innerHTML = `<label><h2>Front-End:</h2></label>
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
