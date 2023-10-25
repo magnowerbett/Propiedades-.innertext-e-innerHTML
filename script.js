@@ -1,30 +1,24 @@
-const tituloElement = document.getElementById('titulo');
-const ulElement = document.querySelector('ul');
-const aElement = document.querySelector('a');
-const olElement = document.getElementById('lista-ordenada');
 
-tituloElement.innerText = 'Título do Projeto';
-aElement.innerText = 'Link para o ProzEducação';
+let titulo = document.getElementById('titulo')
+let link = document.querySelector('a');
 
-const itensNaoOrdenados = ['Item 1', 'Item 2', 'Item 3'];
 
-itensNaoOrdenados.forEach((item) => {
-    const li = document.createElement('li');
-    li.innerText = item;
-    ulElement.appendChild(li);
-});
+titulo.innerText = 'JavaScript - 1'
+link.innerText = 'Proz - Talento Cloud'
 
-const itensOrdenados = [
-    { text: 'Google', link: 'https://www.google.com' },
-    { text: 'Facebook', link: 'https://www.facebook.com' },
-    { text: 'GitHub', link: 'https://www.github.com' }
-];
+// Capturando os elementos ul e ol
+let listaNaoOrdenada = document.querySelector('ul')
+let listaOrdenada = document.querySelector('ol')
 
-itensOrdenados.forEach((item) => {
-    const li = document.createElement('li');
-    const link = document.createElement('a');
-    link.href = item.link;
-    link.innerText = item.text;
-    li.appendChild(link);
-    olElement.appendChild(li);
-});
+// Adicionando três itens simples na lista não ordenada
+listaNaoOrdenada.innerHTML = `
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+`
+// Adicionando três itens com links na lista ordenada
+listaOrdenada.innerHTML = `
+  <li><a href="https:www.facebook.com">Facebook</a></li>
+  <li><a href="https://www.amazon.com">Amazon</a></li>
+  <li><a href="https://www.google.com">Google</a></li>
+`
